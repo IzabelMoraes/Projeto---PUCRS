@@ -1,0 +1,12 @@
+#arrow img{
+    position: absolute;
+    top: 37px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
