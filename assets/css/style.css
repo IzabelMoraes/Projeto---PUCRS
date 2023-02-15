@@ -81,11 +81,16 @@ body{
     border-radius: 100%;
 }
 
-#visitante-h2{
+#visitante-h2 h2{
     color: white;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+}
+
+#visitante-h2{
+    color: white;
+    text-decoration: none;
 }
 
 .vestibulando-login{
@@ -117,10 +122,14 @@ body{
     border-radius: 100%;
 }
 
-
-#vestibulando-h2{
+#vestibulando-h2 h2{
     color: white;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+}
+
+#vestibulando-h2{
+    color: white;
+    text-decoration: none;
 }
