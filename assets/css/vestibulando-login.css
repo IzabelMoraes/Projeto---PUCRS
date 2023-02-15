@@ -60,7 +60,6 @@ input[type="text"]{
     border-radius: 10px;
     outline: none;
     padding: 0 10px;
-    font-size: 20px;
 }
 
 input[type="email"]{
@@ -92,7 +91,6 @@ input[type="email"]{
     border-radius: 10px;
     outline: none;
     padding: 0 10px;
-    font-size: 20px;
 }
 
 .form-endereco label{
@@ -118,7 +116,6 @@ input[type="email"]{
     border-radius: 10px;
     outline: none;
     padding: 0 10px;
-    font-size: 20px;
 }
 
 .form-cpf label{
@@ -144,7 +141,6 @@ input[type="email"]{
     border-radius: 10px;
     outline: none;
     padding: 0 10px;
-    font-size: 20px;
 }
 
 .form-rg label{
