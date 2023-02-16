@@ -1,4 +1,12 @@
-const masks = {
+document.getElementById('input').forEach($input => {
+    const field = $input.dataset.js
+  
+    $input.addEventListener('input', e => {
+      e.target.value = masks[field](e.target.value)
+    }, false)
+  })
+  
+  const masks = {
     cpf (value) {
       return value
         .replace(/\D+/g, '')
@@ -15,10 +23,4 @@ const masks = {
     }
 }
 
-document.querySelectorAll('input').forEach($input => {
-    const field = $input.dataset.js
-  
-    $input.addEventListener('input', e => {
-      e.target.value = masks[field](e.target.value)
-    }, false)
-  })
+
