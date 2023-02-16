@@ -1,0 +1,13 @@
+//Prova
+create table provas(
+id bigint not null auto_increment,
+nome varchar(100) not null,
+descricaodescricao varchar(255) not null,
+especialidade varchar(100) not null,
+localidade varchar(255) not null,
+dia varchar(10) not null,
+hora varchar(5) not null,
+nota varchar(4),
+
+primary key (id)
+);
