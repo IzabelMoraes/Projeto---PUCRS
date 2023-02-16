@@ -172,6 +172,10 @@ input[type="email"]{
 }
 
 @media (min-width: 355px) and (max-width: 375px){
+    body{
+        height: 667px;
+    }
+    
     #brasao{
         width: 87.95px;
         height: 109px;
@@ -226,6 +230,7 @@ input[type="email"]{
 
     .form-rg label{
         left: 84px;
+        background: linear-gradient( rgb(2 61 104) 60%, rgba(26, 89, 134, 0.763889) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);
     }
 
 

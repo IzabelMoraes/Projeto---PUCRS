@@ -98,6 +98,10 @@ input[type="email"]{
 }
 
 @media (min-width: 355px) and (max-width: 375px){
+    body{
+        height: 667px;
+    }
+    
     #brasao{
         width: 87.95px;
         height: 109px;
