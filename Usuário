@@ -1,11 +1,11 @@
 //Controller
-package med.voll.api.controller;
+package Teste.demo.Controller;
 
+import Teste.demo.Infra.Security.DadosTokenJWT;
+import Teste.demo.Infra.Security.TokenService;
+import Teste.demo.Usuario.DadosAutenticacao;
+import Teste.demo.Usuario.Usuario;
 import jakarta.validation.Valid;
-import med.voll.api.domain.usuario.DadosAutenticacao;
-import med.voll.api.domain.usuario.Usuario;
-import med.voll.api.infra.security.DadosTokenJWT;
-import med.voll.api.infra.security.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -39,7 +39,7 @@ public class AutenticacaoController {
 
 
 //AutenticacaoService
-package med.voll.api.domain.usuario;
+package Teste.demo.Usuario;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -61,14 +61,14 @@ public class AutenticacaoService implements UserDetailsService {
 
 
 //DadosAutenticacao
-package med.voll.api.domain.usuario;
+package Teste.demo.Usuario;
 
 public record DadosAutenticacao(String login, String senha) {
 }
 
 
 //Usuario
-package med.voll.api.domain.usuario;
+package Teste.demo.Usuario;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -134,14 +134,15 @@ public class Usuario implements UserDetails {
 
 
 //UsuarioRepository
-package med.voll.api.domain.usuario;
+package Teste.demo.Usuario;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+public interface UsuarioRepository extends JpaRepository<Teste.demo.Usuario.Usuario, Long> {
     UserDetails findByLogin(String login);
 }
+
 
 
 //Dependencias
@@ -158,13 +159,14 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
 
 //SecurityConfiguration
-package med.voll.api.infra.security;
+package Teste.demo.Infra.Security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -176,52 +178,51 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfigurations {
+public class SecurityConfiguration {
 
     @Autowired
-    private SecurityFilter securityFilter;
+    private SecurityFilter secutyFilter;
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         return http.csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and().authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/login").permitAll()
                 .anyRequest().authenticated()
-                .and().addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
+                .and().addFilterBefore(secutyFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
     }
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception{
         return configuration.getAuthenticationManager();
     }
 
     @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+    public PasswordEncoder passwordEncoder(){return new BCryptPasswordEncoder();
     }
-
 
 }
 
 
 
 //DadosTokenJWT
-package med.voll.api.infra.security;
+package Teste.demo.Infra.Security;
 
 public record DadosTokenJWT(String token) {
 }
 
 
-//SecurityFilter
-package med.voll.api.infra.security;
 
+//SecurityFilter
+package Teste.demo.Infra.Security;
+
+import Teste.demo.Usuario.UsuarioRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import med.voll.api.domain.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -243,7 +244,7 @@ public class SecurityFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         var tokenJWT = recuperarToken(request);
 
-        if (tokenJWT != null) {
+        if(tokenJWT != null){
             var subject = tokenService.getSubject(tokenJWT);
             var usuario = repository.findByLogin(subject);
 
@@ -254,26 +255,26 @@ public class SecurityFilter extends OncePerRequestFilter {
         filterChain.doFilter(request, response);
     }
 
-    private String recuperarToken(HttpServletRequest request) {
+    private String recuperarToken(HttpServletRequest request){
         var authorizationHeader = request.getHeader("Authorization");
-        if (authorizationHeader != null) {
+        if(authorizationHeader != null){
             return authorizationHeader.replace("Bearer ", "");
         }
-
         return null;
     }
+
 
 }
 
 
 //ToeknService
-package med.voll.api.infra.security;
+package Teste.demo.Infra.Security;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import med.voll.api.domain.usuario.Usuario;
+import Teste.demo.Usuario.Usuario;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -318,3 +319,4 @@ public class TokenService {
     }
 
 }
+
