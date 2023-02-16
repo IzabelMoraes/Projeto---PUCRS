@@ -4,6 +4,7 @@ body{
     height: 570px;
     background: linear-gradient(180deg, #023D68 71.09%, rgba(21, 83, 127, 0.817316) 91.28%, rgba(26, 89, 134, 0.763889) 97.18%, rgba(38, 103, 149, 0.645833) 104.23%, rgba(105, 179, 232, 0) 107.66%);
     font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
 }
 
 #conta-visitante{
