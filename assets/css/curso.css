@@ -1,0 +1,164 @@
+body{
+    position: relative;
+    width: 232px;
+    height: 570px;
+    background: #023D68;
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+}
+
+.graduacao-header{
+    display: flex;
+    flex-direction: row;
+}
+
+#graduacao-h1{
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    width: 251px;
+    height: 24px;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.vestibulando-img{
+    position: sticky;
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.vestibulando-img-fundo{
+    position: absolute;
+    left: 264px;
+    top: 23px;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.curso_adm{
+    background-color: white;
+    position: absolute;
+    left: 11px;
+    top: 124px;
+    bottom: 66px;
+    width: 297px;
+    border-radius: 0 0 20px 20px;
+}
+
+.curso-imagem-texto{
+    font-size: 8px;
+    line-height: 10px;
+    color: white;
+    background: #0065A3;
+    border-radius: 2px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    z-index: 1;
+    width: 54px;
+    height: 10px;
+}
+
+.curso-imagem{
+    position: relative;
+    width: 277px;
+    height: 120px;
+    border-radius: 0 22px 22px 22px;
+    top: 20px;
+    left: 10px;
+}
+
+.text-1{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 16px;
+    width: 159px;
+    height: 79px;
+    top: 48px;
+}
+
+.text-2{
+    color: white;
+    font-size: 15px;
+    line-height: 18px;
+    position: absolute;
+    left: 16px;
+    width: 159px;
+    height: 79px;
+    bottom: 225px;
+}
+
+.curso-info{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 99px;
+    top: 31px;
+    left: 2px;
+    justify-content: space-around;
+}
+
+/*2 curso*/
+
+.curso-imagem-texto-2{
+    font-size: 8px;
+    line-height: 10px;
+    color: white;
+    background: #0065A3;
+    border-radius: 2px;
+    position: relative;
+    top: 50px;
+    left: 10px;
+    z-index: 1;
+    width: 54px;
+    height: 10px;
+}
+
+.curso-imagem-2{
+    position: relative;
+    width: 277px;
+    height: 120px;
+    border-radius: 0 22px 22px 22px;
+    top: 40px;
+    left: 10px;
+}
+
+.text-1_2{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 16px;
+    width: 160px;
+    height: 79px;
+    top: 219px;
+}
+
+.text-2_2{
+    color: white;
+    font-size: 15px;
+    line-height: 18px;
+    position: absolute;
+    left: 16px;
+    width: 167px;
+    height: 79px;
+    bottom: 50px;
+}
+
+.curso-info-2{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 99px;
+    top: 50px;
+    left: 2px;
+    justify-content: space-around;
+}
