@@ -11,7 +11,7 @@
     height: 44px;
     border-radius: 0px 7px 7px 16px;
     padding-left: 25px;
-    border: 1px solid rgba(89, 185, 217, 0.5);
+    border: 2px solid rgba(89, 185, 217, 0.5);
     z-index: 1;
     box-shadow: -2px 5px 11px 0px #5a5757;
 }
