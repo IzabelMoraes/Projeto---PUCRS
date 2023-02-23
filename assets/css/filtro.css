@@ -26,3 +26,14 @@
     font-weight: 500;
 }
 
+@media (min-width: 355px) and (max-width: 375px){
+    .filtro select{
+        width: 355px;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 425px){
+    .filtro select{
+        width: 407px;
+    }
+}

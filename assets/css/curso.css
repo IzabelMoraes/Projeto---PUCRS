@@ -65,3 +65,35 @@ body{
     top: 20px;
     left: 10px;
 }
+
+@media (min-width: 355px) and (max-width: 375px){
+    .vestibulando-img-fundo{
+        left: 320px;
+        top: 18px;
+    }
+    .curso-imagem-texto{
+        left: 40px;
+    }
+    .curso-imagem{
+        left: 40px;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 425px){
+    #graduacao-h1{
+        width: 270px;
+        font-size: 22px;
+    }
+    .vestibulando-img-fundo{
+        left: 371px;
+        top: 18px;
+    }
+    .curso-imagem-texto{
+        left: 58px;
+    }
+    .curso-imagem{
+        width: 290px;
+        height: 125px;
+        left: 57px;
+    }
+}
