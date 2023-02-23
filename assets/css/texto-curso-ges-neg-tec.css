@@ -256,12 +256,6 @@
     .text-2_7{
         left: 44px;
     }
-    .text-1{
-        left: 44px;
-    }
-    .text-2{
-        left: 44px;
-    }
 }
 
 @media (min-width: 380px) and (max-width: 425px){
