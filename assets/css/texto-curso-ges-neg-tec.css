@@ -100,7 +100,7 @@
     left: 16px;
     width: 160px;
     height: 79px;
-    top: 710px;
+    top: 703px;
 }
 
 .text-2_5{
@@ -111,7 +111,7 @@
     left: 16px;
     width: 167px;
     height: 79px;
-    top: 752px;
+    top: 745px;
 }
 
 .text-1_6{
@@ -202,4 +202,139 @@
     top: 10px;
     left: 2px;
     justify-content: space-around;
+}
+
+@media (min-width: 355px) and (max-width: 375px){
+    .curso_ges{
+        width: 352px;
+    }
+    .curso-imagem-texto-2{
+        left: 40px;
+    }
+    .curso-imagem-2{
+        left: 40px;
+    }
+    .text-1{
+        left: 44px;
+    }
+    .text-2{
+        left: 44px;
+    }
+    .text-1_2{
+        left: 44px;
+    }
+    .text-2_2{
+        left: 44px;
+    }
+    .text-1_3{
+        left: 44px;
+    }
+    .text-2_3{
+        left: 44px;
+    }
+    .text-1_4{
+        left: 44px;
+    }
+    .text-2_4{
+        left: 44px;
+    }
+    .text-1_5{
+        left: 44px;
+    }
+    .text-2_5{
+        left: 44px;
+    }
+    .text-1_6{
+        left: 44px;
+    }
+    .text-2_6{
+        left: 44px;
+    }
+    .text-1_7{
+        left: 44px;
+    }
+    .text-2_7{
+        left: 44px;
+    }
+    .text-1{
+        left: 44px;
+    }
+    .text-2{
+        left: 44px;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 425px){
+    .curso_ges{
+        width: 403px;
+        height: 1203px;
+    }   
+    .curso-imagem-texto-2{
+        left: 58px;
+    }
+    .curso-imagem-2{
+        width: 290px;
+        height: 125px;
+        left: 57px;
+    }
+    .text-1{
+        left: 62px;
+    }
+    .text-2{
+        left: 62px;
+    }
+    .text-1_2{
+        top: 218px;
+        left: 62px;
+    }
+    .text-2_2{
+        top: 246px;
+        left: 62px;
+    }
+    .text-1_3{
+        top: 387px;
+        left: 62px;
+    }
+    .text-2_3{
+        top: 415px;
+        left: 62px;
+    }
+    .text-1_4{
+        top: 556px;
+        left: 62px;
+    }
+    .text-2_4{
+        top: 598px;
+        left: 62px;
+    }
+    .text-1_5{
+        top: 725px;
+        left: 62px;
+    }
+    .text-2_5{
+        top: 773px;
+        left: 62px;
+    }
+    .text-1_6{
+        top: 894px;
+        left: 62px;
+    }
+    .text-2_6{
+        top: 922px;
+        left: 62px;
+    }
+    .text-1_7{
+        top: 1064px;
+        left: 62px;
+    }
+    .text-2_7{
+        top: 1092px;
+        left: 62px;
+    }
+    .curso-info{
+        justify-content: space-evenly;
+    }    
+    .curso-info-2{
+        justify-content: space-evenly;
+    }   
 }
