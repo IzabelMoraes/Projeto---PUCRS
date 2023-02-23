@@ -50,3 +50,96 @@
     height: 79px;
     top: 738px;
 }
+
+@media (min-width: 355px) and (max-width: 375px){
+    .curso_neg{
+        width: 352px;
+    }
+    .curso-imagem-texto-2{
+        left: 40px;
+    }
+    .curso-imagem-2{
+        left: 40px;
+    }
+    .text-1{
+        left: 44px;
+    }
+    .text-2{
+        left: 44px;
+    }
+    .text-1_2{
+        left: 44px;
+    }
+    .text-2_2{
+        left: 44px;
+    }
+    .text-1_3{
+        left: 44px;
+    }
+    .text-2_3{
+        left: 44px;
+    }
+    .text-1_4-1{
+        left: 44px;
+    }
+    .text-2_4-1{
+        left: 44px;
+    }
+    .text-1_5-1{
+        left: 44px;
+    }
+    .text-2_5-1{
+        left: 44px;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 425px){
+    .curso_neg{
+        width: 403px;
+        height: 870px;
+    }   
+    .curso-imagem-texto-2{
+        left: 58px;
+    }
+    .curso-imagem-2{
+        width: 290px;
+        height: 125px;
+        left: 57px;
+    }
+    .text-1{
+        left: 62px;
+    }
+    .text-2{
+        left: 62px;
+    }
+    .text-1_2{
+        left: 62px;
+    }
+    .text-2_2{
+        left: 62px;
+    }
+    .text-1_3{
+        left: 62px;
+    }
+    .text-2_3{
+        left: 62px;
+    }
+    .text-1_4-1{
+        left: 62px;
+    }
+    .text-2_4-1{
+        left: 62px;
+    }
+    .text-1_5-1{
+        left: 62px;
+    }
+    .text-2_5-1{
+        left: 62px;
+    }
+    .curso-info{
+        justify-content: space-evenly;
+    }    
+    .curso-info-2{
+        justify-content: space-evenly;
+    }   
+}
