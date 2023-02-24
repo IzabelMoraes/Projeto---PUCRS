@@ -157,6 +157,10 @@ input[type="email"]{
     background: linear-gradient( rgb(2 61 104) 60%, rgba(26, 89, 134, 0.763889) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);
 }
 
+input[type="password"]{
+    color: white;
+    font-size: 14px;
+}
 
 .form-senha input{
     position: relative;
