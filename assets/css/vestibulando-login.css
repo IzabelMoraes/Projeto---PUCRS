@@ -1,7 +1,7 @@
 body{
     position: relative;
     width: 232px;
-    height: 570px;
+    height: 710px;
     background: linear-gradient(180deg, #023D68 71.09%, rgba(21, 83, 127, 0.817316) 91.28%, rgba(26, 89, 134, 0.763889) 97.18%, rgba(38, 103, 149, 0.645833) 104.23%, rgba(105, 179, 232, 0) 107.66%);
     font-family: 'Montserrat', sans-serif;
     background-repeat: no-repeat;
@@ -142,6 +142,7 @@ input[type="email"]{
     border-radius: 10px;
     outline: none;
     padding: 0 10px;
+    margin-bottom: 16px;
 }
 
 .form-rg label{
@@ -153,7 +154,60 @@ input[type="email"]{
     text-transform: capitalize;
     font-size: 15px;
     padding: 0 10px;
-    background: linear-gradient( rgb(32 87 127) 60%, rgba(26, 89, 134, 0.763889) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);}
+    background: linear-gradient( rgb(2 61 104) 60%, rgba(26, 89, 134, 0.763889) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);
+}
+
+
+.form-senha input{
+    position: relative;
+    width: 212px;
+    height: 48px;
+    left: 46px;
+    top: 220px;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+}
+
+.form-senha label{
+    position: absolute;
+    top: 521px;
+    left: 58px;
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0 10px;
+    background: linear-gradient( rgb(12 69 111) 60%, rgb(20 76 117) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);
+}
+
+.form-confirma-senha input{
+    position: relative;
+    width: 212px;
+    height: 48px;
+    left: 46px;
+    top: 220px;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    margin-top: 16px;
+}
+
+.form-confirma-senha label{
+    position: absolute;
+    top: 589px;
+    left: 58px;
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0 10px;
+    background: linear-gradient( rgb(41 95 134) 60%, rgba(26, 89, 134, 0.763889) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);
+}
 
 #botao-vestibulando{
     font-family: 'Montserrat', sans-serif;
@@ -173,7 +227,7 @@ input[type="email"]{
 
 @media (min-width: 355px) and (max-width: 375px){
     body{
-        height: 667px;
+        height: 710px;
     }
     
     #brasao{
@@ -233,6 +287,21 @@ input[type="email"]{
         background: linear-gradient( rgb(2 61 104) 60%, rgba(26, 89, 134, 0.763889) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);
     }
 
+    .form-senha input{
+        left: 70px;
+    }
+
+    .form-senha label{
+        left: 84px;
+    }
+
+    .form-confirma-senha input{
+        left: 70px;
+    }
+
+    .form-confirma-senha label{
+        left: 84px;
+    }
 
     #botao-vestibulando{
         left: 210px;
@@ -241,7 +310,7 @@ input[type="email"]{
 
 @media (min-width: 380px) and (max-width: 425px){
     body{
-        height: 667px;
+        height: 710px;
     }
     
     #brasao{
@@ -299,7 +368,19 @@ input[type="email"]{
     .form-rg label{
         left: 105px;
     }
-
+    .form-senha input{
+        left: 94px;
+    }
+    .form-senha label{
+        left: 105px;
+    }
+    .form-confirma-senha input{
+        left: 94px;
+    }
+    .form-confirma-senha label{
+        left: 105px;
+        width: 128px;
+    }
 
     #botao-vestibulando{
         left: 233px;
