@@ -1,0 +1,106 @@
+body{
+    position: relative;
+    width: 232px;
+    height: 570px;
+    background: #023D68;
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    left: 55px;
+    position: absolute;
+    left: 266px;
+    top: 8px;
+}
+
+.user-img{
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 35px;
+    height: 35px; 
+}
+
+.user-img-fundo{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid #59B9D9;
+}
+
+.usuario-ola h1{
+    position: absolute;
+    top: 35px;
+    left: 9px;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+
+.usuario-ola p{
+    position: absolute;
+    top: 60px;
+    left: 9px;
+    width: 316px;
+    font-size: 13px;
+    line-height: 18px;
+    color: white;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-titulo{
+    position: absolute;
+    top: 95px;
+    left: 11px;
+    font-size: 20px;
+    line-height: 24.38px;
+    width: 232px;
+    height: 24px;
+    color: white;
+}
+
+.card-texto{
+    position: absolute;
+    width: 308px;
+    height: 17px;
+    top: 117px;
+    left: 16px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFFB2;
+}
+
+.card-img-secao{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-texto{
+    position: relative;
+    top: 149px;
+    left: 10px;
+    width: 210.52px;
+    height: 94.44px;
+    font-size: 13px;
+    line-height: 17.07px;
+    color: white;
+    z-index: 1000;
+}
+
+.card-img{
+    position: relative;
+    top: 55px;
+    left: 5px;
+    width: 308px;
+    height: 130px;
+}
