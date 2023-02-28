@@ -1,0 +1,95 @@
+package gastronomia.gastronomia.Controller;
+
+import gastronomia.gastronomia.Usuario.DadosAutentic;
+import gastronomia.gastronomia.Usuario.DadosCadastroUsuario;
+import gastronomia.gastronomia.Usuario.UsuarioRepository;
+import gastronomia.gastronomia.Usuario.usuario;
+import gastronomia.gastronomia.infra.DadosTokenJWT;
+import gastronomia.gastronomia.infra.TokenService;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import static gastronomia.gastronomia.Usuario.validar.isValidEmailAddressRegex;
+
+
+@RestController
+@RequestMapping("/api")
+public class AutenticacaoController {
+
+    @Autowired
+    private AuthenticationManager manager;
+
+    @Autowired
+    private UsuarioRepository repository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+
+    @Autowired
+    private TokenService tokenService;
+
+
+    @PostMapping
+    @RequestMapping("cadastros")
+    public ResponseEntity cadastrar(@RequestBody  DadosCadastroUsuario dados) {
+        usuario c = new usuario(dados);
+        usuario u = repository.findByEmail(dados.email());
+
+        if (u == null) {
+            c.setEmail(c.getEmail());
+            if (isValidEmailAddressRegex(c.getEmail()) == false) {
+                c.setSenha(passwordEncoder.encode(c.getSenha()));
+                repository.save(c);
+
+
+                var authenticationToken = new UsernamePasswordAuthenticationToken(dados.email(), dados.senha());
+
+                var authentication = manager.authenticate(authenticationToken);
+
+                var tokenJWT = tokenService.gerarToken((usuario) authentication.getPrincipal());
+
+
+                return ResponseEntity.ok(new DadosTokenJWT(tokenJWT));
+            }else{return new ResponseEntity("deu ruim", HttpStatus.METHOD_NOT_ALLOWED);}
+        } else {
+            return new ResponseEntity("Vai a merda", HttpStatus.ALREADY_REPORTED);
+        }
+    }
+
+    @PostMapping("login")
+    public ResponseEntity efetuarLogin(@RequestBody @Valid DadosAutentic dados) {
+        usuario u = repository.findByEmail(dados.email());
+
+
+        if (u == null) {
+            return new ResponseEntity("Usuario não encontrado", HttpStatus.NOT_FOUND);
+        }
+
+        if (passwordEncoder.matches(dados.senha(), u.getPassword())) {
+
+            var authenticationToken = new UsernamePasswordAuthenticationToken(dados.email(), dados.senha());
+
+            var authentication = manager.authenticate(authenticationToken);
+
+            var tokenJWT = tokenService.gerarToken((usuario) authentication.getPrincipal());
+
+
+            return new ResponseEntity(new DadosTokenJWT(tokenJWT), HttpStatus.OK);
+
+        } else {
+            return new ResponseEntity("Senha incorreta!", HttpStatus.BAD_REQUEST);
+        }
+
+
+    }
+}
