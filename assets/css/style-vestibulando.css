@@ -35,7 +35,7 @@ body{
 }
 
 .usuario-ola h1{
-    position: absolute;
+    position: relative;
     top: 35px;
     left: 9px;
     font-size: 20px;
@@ -44,8 +44,8 @@ body{
 }
 
 .usuario-ola p{
-    position: absolute;
-    top: 60px;
+    position: relative;
+    top: 36px;
     left: 9px;
     width: 316px;
     font-size: 13px;
@@ -58,9 +58,35 @@ body{
     flex-direction: column;
 }
 
+.card-separacao{
+    margin: auto;
+}
+
 .card-titulo{
-    position: absolute;
-    top: 95px;
+    position: relative;
+    top: 50px;
+    left: 11px;
+    font-size: 20px;
+    line-height: 24.38px;
+    width: 232px;
+    height: 24px;
+    color: white;
+}
+
+.card-titulo-1{
+    position: relative;
+    bottom: 35px;
+    left: 11px;
+    font-size: 20px;
+    line-height: 24.38px;
+    width: 232px;
+    height: 24px;
+    color: white;
+}
+
+.card-titulo-2{
+    position: relative;
+    top: 16px;
     left: 11px;
     font-size: 20px;
     line-height: 24.38px;
@@ -70,10 +96,32 @@ body{
 }
 
 .card-texto{
-    position: absolute;
+    position: relative;
     width: 308px;
     height: 17px;
-    top: 117px;
+    top: 50px;
+    left: 16px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFFB2;
+}
+
+.card-texto-1{
+    position: relative;
+    width: 308px;
+    height: 17px;
+    bottom: 32px;
+    left: 16px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFFB2;
+}
+
+.card-texto-2{
+    position: relative;
+    width: 308px;
+    height: 17px;
+    top: 19px;
     left: 16px;
     font-size: 12px;
     line-height: 17px;
@@ -87,10 +135,33 @@ body{
 
 .card-img-texto{
     position: relative;
-    top: 149px;
-    left: 10px;
+    top: 72px;
+    left: 29px;
     width: 210.52px;
-    height: 94.44px;
+    font-size: 13px;
+    line-height: 17.07px;
+    color: white;
+    z-index: 1000;
+}
+
+.card-img-texto-1{
+    position: relative;
+    top: 4px;
+    left: 29px;
+    width: 193.52px;
+    height: 18px;
+    font-size: 13px;
+    line-height: 17.07px;
+    color: white;
+    z-index: 1000;
+}
+
+.card-img-texto-2{
+    position: relative;
+    top: 11px;
+    left: 29px;
+    width: 193.52px;
+    height: 18px;
     font-size: 13px;
     line-height: 17.07px;
     color: white;
@@ -99,8 +170,93 @@ body{
 
 .card-img{
     position: relative;
-    top: 55px;
-    left: 5px;
+    top: 14px;
+    left: 8px;
     width: 308px;
     height: 130px;
+}
+
+.card-img-1{
+    position: relative;
+    bottom: 30px;
+    left: 8px;
+    width: 308px;
+    height: 130px;
+}
+
+.card-img-2{
+    position: relative;
+    bottom: 26px;
+    left: 8px;
+    width: 308px;
+    height: 130px;
+    margin-bottom: 2rem;
+}
+
+.card-img-botao a{
+    text-decoration: none;
+    color: white;
+}
+
+.card-img-botao button{
+    position: relative;
+    bottom: 14px;
+    left: 41px;
+    color: white;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    background: #0065A3;
+    border: none;
+    border-radius: 2px;
+    width: fit-content;
+}
+
+.card-img-botao-1{
+    position: relative;
+    bottom: 66px;
+    left: 41px;
+    color: white;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    background: #0065A3;
+    border: none;
+    border-radius: 2px;
+    width: fit-content;
+}
+
+.card-img-botao-2{
+    position: relative;
+    bottom: 56px;
+    left: 41px;
+    color: white;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    background: #0065A3;
+    border: none;
+    border-radius: 2px;
+    width: fit-content;
+}
+
+.card-img-botao-3{
+    position: relative;
+    bottom: 84px;
+    left: 41px;
+    color: white;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    background: #0065A3;
+    border: none;
+    border-radius: 2px;
+    width: fit-content;
+}
+
+.card-prova p{
+    position: relative;
+    top: 52px;
+    left: 29px;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    width: 210.52px;
+    z-index: 1000;
 }
