@@ -1,0 +1,83 @@
+body{
+    position: relative;
+    background: #023D68;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header-h1{
+    font-size: 18px;
+    line-height: 24.2px;
+    color: white;
+    margin: 16px;
+}
+
+.mapa h2{
+    position: relative;
+    left: 10px;
+    font-size: 18px;
+    line-height: 24.2px;
+    color: white;
+}
+
+.mapa img{
+    position: relative;
+    left: 5px;
+    width: 310px;
+    height: 463px;
+}
+
+.prova-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.prova-info h2{
+    font-size: 15px;
+    line-height: 18px;
+    color: #D9D9D9;
+}
+
+.prova-flex-1 input{
+    background-color: transparent;
+    width: 300px;
+    height: 23px;
+    border: 1px solid #59B9D9;
+    border-radius: 15px;
+}
+
+.prova-flex-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.prova-flex-2_1 input{
+    background-color: transparent;
+    width: 99px;
+    height: 23px;
+    border: 1px solid #59B9D9;
+    border-radius: 10px;
+}
+
+.prova-flex-2_2 input{
+    background-color: transparent;
+    width: 60px;
+    height: 23px;
+    border: 1px solid #59B9D9;
+    border-radius: 10px;
+}
+
+.prova-flex-2_3 input{
+    background-color: transparent;
+    width: 86px;
+    height: 23px;
+    border: 1px solid #59B9D9;
+    border-radius: 10px;
+}
+
+.prova-flex-2_4 input{
+    background-color: transparent;
+    width: 63px;
+    height: 23px;
+    border: 1px solid #59B9D9;
+    border-radius: 10px;
+}
