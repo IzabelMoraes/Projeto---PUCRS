@@ -4,7 +4,6 @@ body{
     height: 570px;
     background: #023D68;
     font-family: 'Montserrat', sans-serif;
-    background-repeat: no-repeat;
 }
 
 .user{
@@ -171,7 +170,7 @@ body{
 .card-img{
     position: relative;
     top: 14px;
-    left: 8px;
+    left: 6px;
     width: 308px;
     height: 130px;
 }
@@ -179,7 +178,7 @@ body{
 .card-img-1{
     position: relative;
     bottom: 30px;
-    left: 8px;
+    left: 6px;
     width: 308px;
     height: 130px;
 }
@@ -187,7 +186,7 @@ body{
 .card-img-2{
     position: relative;
     bottom: 26px;
-    left: 8px;
+    left: 6px;
     width: 308px;
     height: 130px;
     margin-bottom: 2rem;
