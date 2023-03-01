@@ -210,7 +210,12 @@ body{
     width: fit-content;
 }
 
-.card-img-botao-1{
+.card-img-botao-1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.card-img-botao-1 button{
     position: relative;
     bottom: 66px;
     left: 41px;
