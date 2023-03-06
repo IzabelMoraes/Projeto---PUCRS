@@ -38,7 +38,84 @@ body{
     height: 15px;
 }
 
+.info-grade-curricular h2{
+    font-size: 25px;
+    line-height: 30.48px;
+    color: white;
+    position: relative;
+    bottom: 45px;
+    left: 10px;
+}
 
+.info-grade-curricular p{
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+}
+
+.tabela_semestre{
+    width: 300px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+    background-color: #023D68;
+}
+
+.tabela_semestre-nome{
+    background-color: #023D68;
+    font-size: 17px;
+    line-height: 22px;
+    color: #88D8F3;
+}
+
+.tabela_semestre-borda{
+    width: 300px;
+    height: 479px;
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.tabela_semestre-curso{
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #034676;
+    position: relative;
+    top: 5px;
+    left: 2px;
+}
+
+#tamanho-texto{
+    width: 164px;
+}
+
+.tabela_semestre-aula{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 5px solid #023d68;
+    height: 44px;
+    position: relative;
+    top: 20px;
+}
+
+.tabela_semestre-borda-lado{
+    border-right: 5px solid #023d68;
+}
+
+.tabela_semestre-tamanho{
+    width: 155px;
+}
 
 .prova-titulo{
     color: white;
@@ -86,14 +163,14 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
-    left: 4px;
+    left: 2px;
     margin-bottom: 7rem;
 }
 
 .prova-flex-2_1 input{
     background-color: transparent;
     width: 85px;
-    height: 23px;
+    height: 18px;
     border: 1px solid #59B9D9;
     border-radius: 10px;
 }
@@ -101,15 +178,15 @@ body{
 .prova-flex-2_2 input{
     background-color: transparent;
     width: 44px;
-    height: 23px;
+    height: 18px;
     border: 1px solid #59B9D9;
     border-radius: 10px;
 }
 
 .prova-flex-2_3 input{
     background-color: transparent;
-    width: 70px;
-    height: 23px;
+    width: 60px;
+    height: 18px;
     border: 1px solid #59B9D9;
     border-radius: 10px;
 }
@@ -117,7 +194,7 @@ body{
 .prova-flex-2_4 input{
     background-color: transparent;
     width: 44px;
-    height: 23px;
+    height: 18px;
     border: 1px solid #59B9D9;
     border-radius: 10px;
 }
