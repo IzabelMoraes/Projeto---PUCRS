@@ -8,19 +8,6 @@ body{
     background-repeat: no-repeat;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.full-width{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 /*Estilização diferente do brasão*/
 #brasao{
     width: 71.95px;
