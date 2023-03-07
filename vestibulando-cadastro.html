@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/arrow.css">
     <link rel="stylesheet" href="./assets/css/brasao.css">
     <link rel="stylesheet" href="./assets/css/input-webkit.css">
@@ -15,56 +17,65 @@
     <link rel="shortcut icon" href="./assets/img/ico/Brasão_PUCRS.ico" type="image/x-icon">
     <title>PUCRS - Vestibulando</title>
 </head>
+
 <body>
     <header>
-       <a href="./index.html" id="arrow"><img src="./assets/img/arrow/arrow.png" alt="Voltar para página inicial" ></a>
-    
-        <img src="./assets/img/logo/Brasão_PUCRS.png" alt="" id="brasao">
-        <img src="./assets/img/logo/Nome_PUCRS.png" alt="PUCRS" id="pucrs-logo">
+        <div class="container">
+            <a href="./index.html" id="arrow"><img src="./assets/img/arrow/arrow.png"
+                    alt="Voltar para página inicial"></a>
+            <div class="full-width">
+                <img src="./assets/img/logo/Brasão_PUCRS.png" alt="" id="brasao">
+            </div>
+            <img src="./assets/img/logo/Nome_PUCRS.png" alt="PUCRS" id="pucrs-logo">
+        </div>
     </header>
     <main>
-        <h1 id="conta-vestibulando">Essa conta é de vestibulando!</h1>
+        <div class="container">
+            <div class="full-width">
+                <h1 id="conta-vestibulando">Essa conta é de vestibulando!</h1>
+            </div>
+            <form>
+                <section class="form">
+                    <div class="full-width">
+                        <label for="nome" class="form-1">Nome</label>
+                    </div>
+                    <input type="text" name="nome" id="nome" required>
+                    
+                    <div class="full-width">                    
+                        <label for="email" class="form-1">E-mail</label>
+                    </div>
+                    <input type="email" name="email" id="email" required>
+                    
+                    <div class="full-width">
+                        <label for="cpf" class="form-2">CPF</label>
+                    </div>
+                    <input type="text" name="cpf" id="campo_cpf" data-js="cpf" required>
+                    
+                    
+                    <div class="full-width">
+                        <label for="rg" class="form-3">RG</label>
+                    </div>
+                    <input type="text" name="rg" id="rg" data-js="rg" required>
+                    
+                    <div class="full-width">
+                        <label for="senha" class="form-1">Senha</label>
+                    </div>
+                    <input type="password" name="senha" id="senha" required>
+                    
+                    <div class="full-width">
+                        <label for="confi-senha" class="form-4">Confirmar senha</label>
+                    </div>
+                    <input type="password" name="confi-senha" id="confi-senha" required>
+                </section>
 
-        <form>
-            <section class="form-name">
-                <input type="text" name="nome" id="nome" required>
-                <label for="nome">Nome</label>
-            </section>
-
-            <section class="form-email">
-                <input type="email" name="email" id="email" required>
-                <label for="email">E-mail</label>
-            </section>
-
-            <section class="form-endereco">
-                <input type="text" name="endereco" id="endereco" required>
-                <label for="endereco">Endereço</label>
-            </section>
-
-            <section class="form-cpf">
-                <input type="text" name="cpf" id="campo_cpf" data-js="cpf" required>
-                <label for="cpf">CPF</label>
-            </section>
-
-            <section class="form-rg">
-                <input type="text" name="rg" id="rg" data-js="rg" required>
-                <label for="rg">RG</label>
-            </section>
-
-            <section class="form-senha">
-                <input type="password" name="senha" id="senha" required>
-                <label for="senha">Senha</label>
-            </section>
-
-            <section class="form-confirma-senha">
-                <input type="password" name="confi-senha" id="confi-senha" required>
-                <label for="confi-senha">Confirmar senha</label>
-            </section>
-
-            <input type="submit" value="Entrar" id="botao-vestibulando">
-        </form>
+                <div class="full-width">
+                    <input type="submit" value="Entrar" id="botao-vestibulando">
+                </div>
+            </form>
+        </div>
     </main>
     <!--<script src="./assets/js/mascaras.js" type="module"></script>-->
     <script src="./assets/js/validacaoCPF.js" type="module"></script>
 </body>
+
 </html>

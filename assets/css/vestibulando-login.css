@@ -1,34 +1,73 @@
 body{
-    position: relative;
-    width: 232px;
-    height: 710px;
-    background: linear-gradient(180deg, #023D68 71.09%, rgba(21, 83, 127, 0.817316) 91.28%, rgba(26, 89, 134, 0.763889) 97.18%, rgba(38, 103, 149, 0.645833) 104.23%, rgba(105, 179, 232, 0) 107.66%);
+    background:  #023D68 ;
     font-family: 'Montserrat', sans-serif;
-    background-repeat: no-repeat;
 }
 
 #conta-vestibulando{
     color: white;
     font-size: 13px;
     line-height: 18px;
-    position: relative;
-    left: 66px;
-    top: 166px;
+    margin-top: 7px;
+    margin-bottom: 19px;
 }
 
-.form-name input{
-    position: relative;
+.form input{
     width: 212px;
     height: 48px;
-    left: 46px;
-    top: 190px;
     background: transparent;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     outline: none;
     padding: 0 10px;
-    font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
+}
+
+.form-1{
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0 10px;
+    background-color: #023D68;
+    position: relative;
+    top: 7px;
+    right: 69px;
+}
+
+.form-2{
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0 10px;
+    background-color: #023D68;
+    position: relative;
+    top: 7px;
+    right: 79px;
+}
+
+.form-3{
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0 10px;
+    background-color: #023D68;
+    position: relative;
+    top: 7px;
+    right: 82px;
+}
+
+.form-4{
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0 10px;
+    background-color: #023D68;
+    position: relative;
+    top: 7px;
+    right: 29px;
 }
 
 input[type="text"]{   
@@ -37,180 +76,15 @@ input[type="text"]{
     font-family: 'Montserrat', sans-serif;
 }
 
-.form-name label{
-    position: absolute;
-    top: 200px;
-    left: 58px;
-    color: white;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 0 10px;
-    background-color: #023D68;
-}
-
-
-.form-email input{
-    position: relative;
-    width: 212px;
-    height: 48px;
-    left: 46px;
-    top: 179px;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    outline: none;
-    padding: 0 10px;
-}
-
 input[type="email"]{
     color: white;
     font-size: 14px;
 }
 
-.form-email label{
-    position: absolute;
-    top: 263px;
-    left: 58px;
-    color: white;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 0 10px;
-    background-color: #023D68;
-}
-
-
-.form-endereco input{
-    position: relative;
-    width: 212px;
-    height: 48px;
-    left: 46px;
-    top: 193px;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    outline: none;
-    padding: 0 10px;
-}
-
-.form-endereco label{
-    position: absolute;
-    top: 328px;
-    left: 58px;
-    color: white;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 0 10px;
-    background-color: #023D68;
-}
-
-.form-cpf input{
-    position: relative;
-    width: 212px;
-    height: 48px;
-    left: 46px;
-    top: 205px;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    outline: none;
-    padding: 0 10px;
-}
-
-.form-cpf label{
-    position: absolute;
-    top: 391px;
-    left: 58px;
-    color: white;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 0 10px;
-    background-color: #023D68;
-}
-
-.form-rg input{
-    position: relative;
-    width: 212px;
-    height: 48px;
-    left: 46px;
-    top: 220px;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    outline: none;
-    padding: 0 10px;
-    margin-bottom: 16px;
-}
-
-.form-rg label{
-    position: absolute;
-    top: 456px;
-    left: 58px;
-    color: white;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 0 10px;
-    background: linear-gradient( rgb(2 61 104) 60%, rgba(26, 89, 134, 0.763889) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);
-}
 
 input[type="password"]{
     color: white;
     font-size: 14px;
-}
-
-.form-senha input{
-    position: relative;
-    width: 212px;
-    height: 48px;
-    left: 46px;
-    top: 220px;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    outline: none;
-    padding: 0 10px;
-}
-
-.form-senha label{
-    position: absolute;
-    top: 521px;
-    left: 58px;
-    color: white;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 0 10px;
-    background: linear-gradient( rgb(12 69 111) 60%, rgb(20 76 117) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);
-}
-
-.form-confirma-senha input{
-    position: relative;
-    width: 212px;
-    height: 48px;
-    left: 46px;
-    top: 220px;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    outline: none;
-    padding: 0 10px;
-    margin-top: 16px;
-}
-
-.form-confirma-senha label{
-    position: absolute;
-    top: 589px;
-    left: 58px;
-    color: white;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 0 10px;
-    background: linear-gradient( rgb(41 95 134) 60%, rgba(26, 89, 134, 0.763889) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);
 }
 
 #botao-vestibulando{
@@ -218,176 +92,12 @@ input[type="password"]{
     color: white;
     font-size: 15px;
     line-height: 18.15px;
-    position: relative;
-    top: 232px;
-    left: 185px;
     width: 94px;
     height: 27px;
     background-color: #0473B2;
     border-radius: 10px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 25px;
 }
 
-@media (min-width: 355px) and (max-width: 375px){
-    body{
-        height: 710px;
-    }
-    
-    #brasao{
-        width: 87.95px;
-        height: 109px;
-        left: 143px;
-    }
-
-    #pucrs-logo{
-        left: 131px;
-        top: 128px;
-    }
-
-    #conta-vestibulando{
-        font-size: 14px;
-        left: 80px;
-    }
-    
-    .form-name input{
-        left: 70px;
-    }
-
-    .form-name label{
-        left: 84px;
-    }
-
-    .form-email input{
-        left: 70px;
-    }
-
-    .form-email label{
-        left: 84px;
-    }
-
-    .form-endereco input{
-        left: 70px;
-    }
-
-    .form-endereco label{
-        left: 84px;
-    }
-
-    .form-cpf input{
-        left: 70px;
-    }
-
-    .form-cpf label{
-        left: 84px;
-    }
-
-    .form-rg input{
-        left: 70px;
-    }
-
-    .form-rg label{
-        left: 84px;
-        background: linear-gradient( rgb(2 61 104) 60%, rgba(26, 89, 134, 0.763889) 30%,rgba(38, 103, 149, 0.645833) 5%, rgba(105, 179, 232, 0) 5%);
-    }
-
-    .form-senha input{
-        left: 70px;
-    }
-
-    .form-senha label{
-        left: 84px;
-    }
-
-    .form-confirma-senha input{
-        left: 70px;
-    }
-
-    .form-confirma-senha label{
-        left: 84px;
-    }
-
-    #botao-vestibulando{
-        left: 210px;
-    }
-}
-
-@media (min-width: 380px) and (max-width: 425px){
-    body{
-        height: 710px;
-    }
-    
-    #brasao{
-        width: 87.95px;
-        height: 109px;
-        left: 165px;
-    }
-
-    #pucrs-logo{
-        left: 154px;
-        top: 128px;
-    }
-
-    #conta-vestibulando{
-        font-size: 15px;
-        left: 102px;
-    }
-    
-    .form-name input{
-        left: 94px;
-    }
-
-    .form-name label{
-        left: 105px;
-    }
-
-    .form-email input{
-        left: 94px;
-    }
-
-    .form-email label{
-        left: 105px;
-    }
-
-    .form-endereco input{
-        left: 94px;
-    }
-
-    .form-endereco label{
-        left: 105px;
-    }
-
-    .form-cpf input{
-        left: 94px;
-    }
-
-    .form-cpf label{
-        left: 105px;
-    }
-
-    .form-rg input{
-        left: 94px;
-    }
-
-    .form-rg label{
-        left: 105px;
-    }
-    .form-senha input{
-        left: 94px;
-    }
-    .form-senha label{
-        left: 105px;
-    }
-    .form-confirma-senha input{
-        left: 94px;
-    }
-    .form-confirma-senha label{
-        left: 105px;
-        width: 128px;
-    }
-
-    #botao-vestibulando{
-        left: 233px;
-    }
-
-}
