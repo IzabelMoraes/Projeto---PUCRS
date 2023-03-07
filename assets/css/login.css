@@ -1,34 +1,37 @@
 body{
-    position: relative;
-    width: 232px;
-    height: 570px;
-    background: linear-gradient(180deg, #023D68 71.09%, rgba(21, 83, 127, 0.817316) 91.28%, rgba(26, 89, 134, 0.763889) 97.18%, rgba(38, 103, 149, 0.645833) 104.23%, rgba(105, 179, 232, 0) 107.66%);
+    background: #023D68;
     font-family: 'Montserrat', sans-serif;
-    background-repeat: no-repeat;
 }
 
 #conta-visitante{
     color: white;
     font-size: 13px;
     line-height: 18px;
-    position: relative;
-    left: 58px;
-    top: 173px;
+    margin-top: 7px;
 }
 
-.form-name input{
-    position: relative;
+.form input{
     width: 212px;
     height: 48px;
-    left: 46px;
-    top: 204px;
     background: transparent;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     outline: none;
     padding: 0 10px;
     font-size: 20px;
-    margin-bottom: 25px;
+}
+
+.form-1{
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0 10px;
+    background-color: #023D68;
+    margin-top: 6px;
+    position: relative;
+    top: 6px;
+    right: 71px;
 }
 
 input[type="text"]{   
@@ -37,31 +40,17 @@ input[type="text"]{
     font-family: 'Montserrat', sans-serif;
 }
 
-.form-name label{
-    position: absolute;
-    top: 212px;
-    left: 58px;
+.form-2{
     color: white;
     font-weight: 400;
     text-transform: capitalize;
     font-size: 15px;
     padding: 0 10px;
     background-color: #023D68;
-}
-
-
-.form-senha input{
+    margin-top: 42px;
     position: relative;
-    width: 212px;
-    height: 48px;
-    left: 46px;
-    top: 220px;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    outline: none;
-    padding: 0 10px;
-    font-size: 20px;
+    top: 6px;
+    right: 71px;
 }
 
 input[type="password"]{
@@ -69,27 +58,16 @@ input[type="password"]{
     font-size: 14px;
 }
 
-.form-senha label{
-    position: absolute;
-    top: 304px;
-    left: 58px;
-    color: white;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 0 10px;
-    background-color: #023D68;
-}
 
 #senha-esqueci{
-    position: absolute;
-    top: 375px;
-    left: 48px;
     font-size: 10px;
     font-weight: 400;
     line-height: 12px;
     color: white;
     text-decoration: none;
+    margin-top: 10px;
+    position:relative;
+    right: 74px;
 }
 
 #botao-visitante{
@@ -97,110 +75,14 @@ input[type="password"]{
     color: white;
     font-size: 15px;
     line-height: 18.15px;
-    position: relative;
-    top: 260px;
-    left: 185px;
     width: 94px;
     height: 27px;
     background-color: #0473B2;
     border-radius: 10px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+    position: relative;
+    left: 140px;
 }
 
-@media (min-width: 355px) and (max-width: 375px){
-    body{
-        height: 667px;
-    }
-    
-    #brasao{
-        width: 87.95px;
-        height: 109px;
-        left: 143px;
-    }
-
-    #pucrs-logo{
-        left: 131px;
-        top: 128px;
-    }
-
-    #conta-visitante{
-        font-size: 15px;
-        left: 68px;
-        width: 257px;
-    }
-    
-    .form-name input{
-        left: 70px;
-    }
-
-    .form-name label{
-        left: 84px;
-    }
-
-    .form-senha input{
-        left: 70px;
-    }
-
-    .form-senha label{
-        left: 84px;
-    }
-
-    #senha-esqueci{
-        left: 73px;
-        font-size: 11px;
-    }
-
-    #botao-visitante{
-        left: 210px;
-    }
-}
-
-@media (min-width: 380px) and (max-width: 425px){
-    body{
-        height: 667px;
-    }
-
-    #brasao{
-        width: 87.95px;
-        height: 109px;
-        left: 165px;
-    }
-
-    #pucrs-logo{
-        left: 154px;
-        top: 128px;
-    }
-
-    #conta-visitante{
-        font-size: 16px;
-        width: 260px;
-        left: 85px;
-    }
-    
-    .form-name input{
-        left: 94px;
-    }
-
-    .form-name label{
-        left: 105px;
-    }
-
-    .form-senha input{
-        left: 94px;
-    }
-
-    .form-senha label{
-        left: 105px;
-    }
-
-    #senha-esqueci{
-        left: 97px;
-        font-size: 12px;
-    }
-
-    #botao-visitante{
-        left: 233px;
-    }
-
-}
