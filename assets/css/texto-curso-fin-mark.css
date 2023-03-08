@@ -42,31 +42,3 @@
     justify-content: space-around;
 }
 
-
-@media (min-width: 355px) and (max-width: 375px){
-    .curso_fin_mark{
-        width: 352px;
-    }
-    .text-1{
-        left: 44px;
-    }
-    .text-2-1{
-        left: 44px;
-    }
-  
-}
-
-@media (min-width: 380px) and (max-width: 425px){
-    .curso_fin_mark{
-        width: 403px;
-    }   
-    .text-1{
-        left: 62px;
-    }
-    .text-2-1{
-        left: 62px;
-    }
-    .curso-info{
-        justify-content: space-evenly;
-    }    
-}
