@@ -26,8 +26,8 @@ body{
     width: 54px;
     height: 10px;
     position: relative;
-    top: 60px;
-    right: 111px;
+    top: 55px;
+    right: 112px;
 }
 
 .curso-imagem{
@@ -45,9 +45,10 @@ body{
 .text-1{
     color: white;
     font-size: 15px;
-    width: 160px;  
+    width: 161px;
+    height: 10px;
     position: relative;
-    top: 70px;
+    top: 63px;
     right: 50px;
 }
 
@@ -55,10 +56,11 @@ body{
     font-size: 15px;
     line-height: 18px;
     color: rgba(255, 255, 255, 0.7);
-    width: 166px;
+    width: 175px;
+    height: 35px;
     position: relative;
     right: 45px;
-    top: 80px;
+    top: 95px;
 }
 
 .curso-info{
