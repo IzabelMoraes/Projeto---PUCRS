@@ -1,23 +1,9 @@
 body{
-    position: relative;
-    width: 232px;
-    height: 570px;
     background: #023D68;
     font-family: 'Montserrat', sans-serif;
 }
 
-.user{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    left: 55px;
-    position: absolute;
-    left: 266px;
-    top: 8px;
-}
-
-.user-img{
+.user-img{   
     position: relative;
     left: 5px;
     top: 5px;
@@ -30,101 +16,67 @@ body{
     height: 45px;
     background-color: white;
     border-radius: 100%;
-    border: 1px solid #59B9D9;
+    margin-top: 24px;
 }
 
-.usuario-ola h1{
-    position: relative;
-    top: 35px;
-    left: 9px;
-    font-size: 20px;
+#ola{    
+    font-size: 16px;
     line-height: 24px;
     color: white;
+    margin-top: 43px;
+    margin-right: 68px;
 }
 
-.usuario-ola p{
-    position: relative;
-    top: 36px;
-    left: 9px;
-    width: 316px;
-    font-size: 13px;
-    line-height: 18px;
-    color: white;
-}
 
 .card{
     display: flex;
     flex-direction: column;
 }
 
-.card-separacao{
-    margin: auto;
-}
-
 .card-titulo{
-    position: relative;
-    top: 50px;
-    left: 11px;
     font-size: 20px;
     line-height: 24.38px;
-    width: 232px;
-    height: 24px;
     color: white;
+    margin-top: 30px;
 }
 
-.card-titulo-1{
-    position: relative;
-    bottom: 35px;
-    left: 11px;
-    font-size: 20px;
-    line-height: 24.38px;
-    width: 232px;
-    height: 24px;
-    color: white;
+.margin1{
+    margin-right: 75px;
 }
 
-.card-titulo-2{
-    position: relative;
-    top: 16px;
-    left: 11px;
-    font-size: 20px;
-    line-height: 24.38px;
-    width: 232px;
-    height: 24px;
-    color: white;
+.margin2{
+    margin-right: 175px;
+}
+
+.margin3{
+    margin-right: 135px;
+}
+
+.margin4{
+    margin-right: 95px;
 }
 
 .card-texto{
-    position: relative;
-    width: 308px;
-    height: 17px;
-    top: 50px;
-    left: 16px;
     font-size: 12px;
     line-height: 17px;
     color: #FFFFFFB2;
+    margin-bottom: 10px;
 }
 
-.card-texto-1{
-    position: relative;
-    width: 308px;
-    height: 17px;
-    bottom: 32px;
-    left: 16px;
-    font-size: 12px;
-    line-height: 17px;
-    color: #FFFFFFB2;
+.marg1{
+    margin-right: 25px;
 }
 
-.card-texto-2{
-    position: relative;
-    width: 308px;
-    height: 17px;
-    top: 19px;
-    left: 16px;
-    font-size: 12px;
-    line-height: 17px;
-    color: #FFFFFFB2;
+.marg2{
+    margin-right: 115px;
+}
+
+.marg3{
+    margin-right: 115px;
+}
+
+.marg4{
+    margin-right: 65px;
 }
 
 .card-img-secao{
@@ -133,134 +85,40 @@ body{
 }
 
 .card-img-texto{
-    position: relative;
-    top: 72px;
-    left: 29px;
     width: 210.52px;
+    height: 25px;
     font-size: 13px;
     line-height: 17.07px;
     color: white;
-    z-index: 1000;
+    position: relative;
+    bottom: 121px;
+    left: 9px;
 }
 
-.card-img-texto-1{
-    position: relative;
-    top: 4px;
-    left: 29px;
-    width: 193.52px;
-    height: 18px;
-    font-size: 13px;
-    line-height: 17.07px;
-    color: white;
-    z-index: 1000;
-}
 
-.card-img-texto-2{
-    position: relative;
-    top: 11px;
-    left: 29px;
-    width: 193.52px;
-    height: 18px;
-    font-size: 13px;
-    line-height: 17.07px;
-    color: white;
-    z-index: 1000;
-}
-
-.card-img{
-    position: relative;
-    top: 14px;
-    left: 6px;
+.card-img{    
     width: 308px;
     height: 130px;
 }
 
-.card-img-1{
-    position: relative;
-    bottom: 30px;
-    left: 6px;
-    width: 308px;
-    height: 130px;
+.espacamento{
+    margin-bottom: 5rem;
 }
 
-.card-img-2{
-    position: relative;
-    bottom: 26px;
-    left: 6px;
-    width: 308px;
-    height: 130px;
-    margin-bottom: 2rem;
-}
-
-.card-img-botao a{
+.card-botao a{
     text-decoration: none;
     color: white;
 }
 
-.card-img-botao button{
-    position: relative;
-    bottom: 14px;
-    left: 41px;
+.card-botao button{
     color: white;
     font-size: 11px;
     font-family: 'Montserrat', sans-serif;
     background: #0065A3;
     border: none;
     border-radius: 2px;
-    width: fit-content;
-}
-
-.card-img-botao-1 a{
-    text-decoration: none;
-    color: white;
-}
-
-.card-img-botao-1 button{
-    position: relative;
-    bottom: 66px;
-    left: 41px;
-    color: white;
-    font-size: 11px;
-    font-family: 'Montserrat', sans-serif;
-    background: #0065A3;
-    border: none;
-    border-radius: 2px;
-    width: fit-content;
-}
-
-.card-img-botao-2{
     position: relative;
     bottom: 56px;
-    left: 41px;
-    color: white;
-    font-size: 11px;
-    font-family: 'Montserrat', sans-serif;
-    background: #0065A3;
-    border: none;
-    border-radius: 2px;
-    width: fit-content;
+    left: 27px;
 }
 
-.card-img-botao-3{
-    position: relative;
-    bottom: 84px;
-    left: 41px;
-    color: white;
-    font-size: 11px;
-    font-family: 'Montserrat', sans-serif;
-    background: #0065A3;
-    border: none;
-    border-radius: 2px;
-    width: fit-content;
-}
-
-.card-prova p{
-    position: relative;
-    top: 52px;
-    left: 29px;
-    font-size: 14px;
-    line-height: 17px;
-    color: white;
-    width: 210.52px;
-    z-index: 1000;
-}
