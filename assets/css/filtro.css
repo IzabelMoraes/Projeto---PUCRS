@@ -1,19 +1,17 @@
 .filtro select{
-    position: relative;
     color: #013C67;
-    left: 9px;
-    top: 90px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
-    width: 300px;
+    width: 311px;
     height: 44px;
     border-radius: 0px 7px 7px 16px;
-    padding-left: 25px;
     border: 2px solid rgba(89, 185, 217, 0.5);
     z-index: 1;
     box-shadow: -2px 5px 11px 0px #5a5757;
+    position: relative;
+    top: 27px;
 }
 
 .filtro select:hover{
@@ -26,14 +24,3 @@
     font-weight: 500;
 }
 
-@media (min-width: 355px) and (max-width: 375px){
-    .filtro select{
-        width: 355px;
-    }
-}
-
-@media (min-width: 380px) and (max-width: 425px){
-    .filtro select{
-        width: 407px;
-    }
-}
