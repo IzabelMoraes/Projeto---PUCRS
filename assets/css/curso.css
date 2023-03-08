@@ -67,6 +67,7 @@ body{
     line-height: 18px;
     color: #013C67;
     display: flex;
+    margin-top: 8px;
 }
 
 .curso-info-ultimo{
@@ -76,6 +77,7 @@ body{
     color: #013C67;
     display: flex;
     margin-bottom: 25px;
+    margin-top: 8px;
 }
 
 .curso-info-separa{
