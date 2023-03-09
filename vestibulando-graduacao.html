@@ -1,141 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/graduacao.css">
     <link rel="stylesheet" href="./assets/css/menu-footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/ico/Brasão_PUCRS.ico" type="image/x-icon">
     <title>PUCRS - Minha Graduação</title>
 </head>
+
 <body>
     <header>
-        <section class="curso__graduacao">
-            <img src="./assets/img/marketing/marketing.png" alt="#" class="curso__graduacao-img">
-            <h1 class="curso__graduacao-h1">Marketing:</h1>
-            <p class="curso__graduacao-p">Material de acompanhamento</p>
-            <h2 class="curso__graduacao-img-texto">GRADUAÇÃO</h2>
-        </section>  
+        <div class="container">
+            <section class="curso__graduacao">
+                <h1 class="curso__graduacao-h1">Marketing:</h1>
+                <p class="curso__graduacao-p">Material de acompanhamento</p>
+                <h2 class="curso__graduacao-img-texto">GRADUAÇÃO</h2>
+                <img src="./assets/img/marketing/marketing.png" alt="#" class="curso__graduacao-img">
+            </section>
+        </div>
     </header>
 
     <main>
-        <section class="info-grade-curricular">
-            <h2>Sua grade curricular</h2>
-            <p>Planejamento de aulas do seu Semestre!</p>
-        </section>
-
-        <table class="tabela_semestre">
-            <tr class="tabela_semestre-nome">
-                <th>1° Semestre</th>
-                <th>2° Semestre</th>
-            </tr>
-        </table>
-        <table class="tabela_semestre-borda">
-            <tr class="tabela_semestre-curso">
-                <td class="tabela_semestre-borda-lado">Princípio de marketing</td>
-                <td class="tabela_semestre-tamanho">Projeto integrado I</td>
-            </tr>
-            <tr class="tabela_semestre-aula">
-                <td class="tabela_semestre-borda-lado">(80 AULAS)</td>
-                <td class="tabela_semestre-tamanho">(80 AULAS)</td>
-            </tr>
-            <tr class="tabela_semestre-curso">
-                <td class="tabela_semestre-borda-lado">Tecnologia de apresentação e portifólio</td>
-                <td class="tabela_semestre-tamanho">Algoritmos e Lógica de propaganda</td>
-            </tr>
-            <tr class="tabela_semestre-aula">
-                <td class="tabela_semestre-borda-lado">(80 AULAS)</td>
-                <td class="tabela_semestre-tamanho">(80 AULAS)</td>
-            </tr>
-            <tr class="tabela_semestre-curso">
-                <td id="tamanho-texto" class="tabela_semestre-borda-lado">Tecnologia da informação e comunicação</td>
-                <td class="tabela_semestre-tamanho">Pesquisa mercadológica</td>
-            </tr>
-            <tr class="tabela_semestre-aula">
-                <td class="tabela_semestre-borda-lado">(40 AULAS)</td>
-                <td class="tabela_semestre-tamanho">(80 AULAS)</td>
-            </tr>
-            <tr class="tabela_semestre-curso">
-                <td class="tabela_semestre-borda-lado">Administração geral</td>
-                <td class="tabela_semestre-tamanho">Gestão de projetos</td>
-            </tr>
-            <tr class="tabela_semestre-aula">
-                <td class="tabela_semestre-borda-lado">(80 AULAS)</td>
-                <td class="tabela_semestre-tamanho">(80 AULAS)</td>
-            </tr>
-            <tr class="tabela_semestre-curso">
-                <td class="tabela_semestre-borda-lado">Matemática discreta</td>
-                <td class="tabela_semestre-tamanho">Estatística</td>
-            </tr>
-            <tr class="tabela_semestre-aula">
-                <td class="tabela_semestre-borda-lado">(80 AULAS)</td>
-                <td class="tabela_semestre-tamanho">(80 AULAS)</td>
-            </tr>
-            <tr class="tabela_semestre-curso">
-                <td class="tabela_semestre-borda-lado">Interpretação e produção de texto</td>
-                <td class="tabela_semestre-tamanho">Metodologia de pesquisa científico - técnico</td>
-            </tr>
-            <tr class="tabela_semestre-aula">
-                <td class="tabela_semestre-borda-lado">(80 AULAS)</td>
-                <td class="tabela_semestre-tamanho">(40 AULAS)</td>
-            </tr>
-            <tr class="tabela_semestre-curso">
-                <td class="tabela_semestre-borda-lado">Inglês I</td>
-                <td class="tabela_semestre-tamanho">Inglês II</td>
-            </tr>
-            <tr class="tabela_semestre-aula">
-                <td class="tabela_semestre-borda-lado">(40 AULAS)</td>
-                <td class="tabela_semestre-tamanho">(40 AULAS)</td>
-            </tr>
-        </table>
-        
-
-        <section class="prova-info">
-            <h2 class="prova-titulo">Suas informações</h2>
-
-            <section class="prova-flex-1">
-                <h2>Prova</h2>
-                <input type="text">
+        <div class="container">
+            <section class="info-grade-curricular">
+                <div class="full-width">
+                    <h2>Sua grade curricular</h2>
+                </div>
+                <p>Planejamento de aulas do seu Semestre!</p>
             </section>
+        </div>
 
-            <section class="prova-flex-1">
-                <h2>Graduação</h2>
-                <input type="text">
+        <div class="container">
+            <section class="semestre-flex-titulo">
+                <h2 class="semestre-titulo" id="titulo-separacao">1° Semestre</h2>
+                <h2 class="semestre-titulo">2° Semestre</h2>
             </section>
+            <div class="full-width">
+                <section class="semestre-flex">
+                    <section class="borda-cor">
+                        <div class="container">
+                            <div class="semestre">
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Princípio de marketing</h2>
+                                    <p class="grade-aula">(80 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Tecnologia de apresentação e portifólio</h2>
+                                    <p class="grade-aula">(80 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Tecnologia da informação e comunicação</h2>
+                                    <p class="grade-aula">(40 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Administração geral</h2>
+                                    <p class="grade-aula">(80 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Matemática discreta</h2>
+                                    <p class="grade-aula">(80 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Interpretação e produção de texto</h2>
+                                    <p class="grade-aula">(80 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Inglês I</h2>
+                                    <p class="grade-aula">(40 AULAS)</p>
+                                </section>
+                            </div>
 
-            <section class="prova-flex-2">
-                <section class="prova-flex-2_1">
-                    <h2>Horário</h2>
-                    <input type="text">
+                            <div class="semestre">
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Projeto integrado I</h2>
+                                    <p class="grade-aula">(80 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Algoritmos e Lógica de propaganda</h2>
+                                    <p class="grade-aula">(80 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Pesquisa mercadológica</h2>
+                                    <p class="grade-aula">(80 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Gestão de projetos</h2>
+                                    <p class="grade-aula">(80 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Estatística</h2>
+                                    <p class="grade-aula">(80 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Metodologia de pesquisa científico - técnico</h2>
+                                    <p class="grade-aula">(40 AULAS)</p>
+                                </section>
+                                <section class="grade-separacao">
+                                    <h2 class="grade-curso">Inglês II</h2>
+                                    <p class="grade-aula">(40 AULAS)</p>
+                                </section>
+                            </div>
+                    </section>
                 </section>
-                <section class="prova-flex-2_2">
-                    <h2>Data</h2>
-                    <input type="text">
-                </section>
-                <section class="prova-flex-2_3">
-                    <h2>Local</h2>
-                    <input type="text">
-                </section>
-                <section class="prova-flex-2_4">
-                    <h2>Prédio</h2>
-                    <input type="text">
-                </section>
+            </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="full-width">
+                <h2 class="prova-titulo">Suas informações</h2>
+            </div>
+            <section class="prova-info">
+                <div class="full-width">
+                    <section class="prova-flex-1">
+                        <h2>Prova</h2>
+                        <input type="text">
+                    </section>
+                </div>
+
+                <div class="full-width">
+                    <section class="prova-flex-1">
+                        <h2>Graduação</h2>
+                        <input type="text">
+                    </section>
+                </div>
+                <div class="full-width">
+                    <section class="prova-flex-2">
+                        <section class="prova-flex-2_1">
+                            <h2>Horário</h2>
+                            <input type="text">
+                        </section>
+                        <section class="prova-flex-2_2">
+                            <h2>Data</h2>
+                            <input type="text">
+                        </section>
+                        <section class="prova-flex-2_3">
+                            <h2>Local</h2>
+                            <input type="text">
+                        </section>
+                        <section class="prova-flex-2_4">
+                            <h2>Prédio</h2>
+                            <input type="text">
+                        </section>
+                    </section>
+                </div>
             </section>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <section class="linha__footer">
-            <section class="linha"><span></span></section>
-        </section>
-        <section class="menu">
-            <a href="vestibulando-index.html"><img src="./assets/img/menu-icons/home.png" alt="Home"></a>
-            <a href="curso-administracao.html"><img src="./assets/img/menu-icons/prova.png" alt="Graduações"></a>
-            <a href="vestibulando-mapa.html"><img src="./assets/img/menu-icons/mapa.png" alt="Mapa"></a>
-        </section> 
+        <div class="container">
+            <section class="footer-confi">
+                <div class="full-width">
+                    <section class="linha__footer">
+                        <section class="linha"><span></span></section>
+                    </section>
+                </div>
+                <section class="menu">
+                    <div class="container">
+                        <a href="vestibulando-index.html"><img src="./assets/img/menu-icons/home.png" alt="Home"></a>
+                        <a href="./curso-administracao.html"><img src="./assets/img/menu-icons/prova.png"
+                                alt="Graduações" class="img-meio"></a>
+                        <a href="vestibulando-mapa.html"><img src="./assets/img/menu-icons/mapa.png" alt="Mapa"></a>
+                    </div>
+                </section>
+            </section>
+        </div>
     </footer>
 </body>
+
 </html>
