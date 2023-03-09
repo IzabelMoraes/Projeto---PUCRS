@@ -1,0 +1,158 @@
+body{
+    position: relative;
+    background: #023D68;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.user-img{
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.user-img-fundo{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 261px;
+    margin-top: 24px;
+}
+
+.mapa{
+    margin-top: -27px;
+}
+
+.mapa h1{
+    margin-right: 80px;
+    font-size: 25px;
+    line-height: 24.2px;
+    color: white;
+}
+
+.mapa img{
+    margin-top: 20px;
+    width: 310px;
+    height: 463px;
+}
+
+.prova-info h2{
+    font-size: 15px;
+    line-height: 18px;
+    color: #D9D9D9;
+}
+
+.prova-info{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prova-flex-1 h2{
+    font-size: 15px;
+    line-height: 18px;
+    color: #D9D9D9;
+}
+
+.prova-flex-2 h2{
+    font-size: 15px;
+    line-height: 18px;
+    color: #D9D9D9;
+}
+
+.prova-flex-1 input{
+    background-color: transparent;
+    width: 280px;
+    height: 23px;
+    border: 1px solid #59B9D9;
+    border-radius: 15px;
+    margin-bottom: 16px;
+}
+
+.prova-flex-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.prova-flex-2_1 input{
+    background-color: transparent;
+    width: 85px;
+    height: 18px;
+    border: 1px solid #59B9D9;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.prova-flex-2_2 input{
+    background-color: transparent;
+    width: 44px;
+    height: 18px;
+    border: 1px solid #59B9D9;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.prova-flex-2_3 input{
+    background-color: transparent;
+    width: 60px;
+    height: 18px;
+    border: 1px solid #59B9D9;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.prova-flex-2_4 input{
+    background-color: transparent;
+    width: 44px;
+    height: 18px;
+    border: 1px solid #59B9D9;
+    border-radius: 10px;
+}
+
+.edital__prova{
+    color: white;
+    margin-bottom: 7rem;
+}
+
+.edital__prova-titulo{
+    font-size: 15px;
+    line-height: 18px;
+    margin: 34px 159px 10px 0px;
+}
+
+.edital__prova-caixa-texto{
+    width: 294px;
+    height: 195px;
+    background: rgba(206, 204, 204, 0.12);
+    border: 1px solid #59B9D9;
+    border-radius: 5px;
+}
+
+.edital__prova-texto{
+    font-size: 11px;
+    line-height: 18px;
+    margin: 2px 17px 0px;
+    width: 256px;
+    text-align: justify;
+}
+
+.edital__prova-rodape{
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 12px;
+}
+
+.edital__prova-linha{
+    display: flex;
+    flex-direction: row;
+}
+
+.linha-prova{
+    width: 292px;
+    height: 2px;
+    margin: 8px 6px 7px 8px;
+    border-bottom: 1px solid #59B9D9;
+    border-radius: 10px;
+}

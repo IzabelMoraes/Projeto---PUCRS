@@ -1,7 +1,7 @@
-footer{
+.footer-confi{
     position: fixed;
     bottom: 0;
-    background-color: #022238;
+    background-color: #022238cc;
     z-index: 1000;
 }
 
@@ -21,7 +21,6 @@ footer{
 
 .menu{
     display: flex;
-    justify-content: space-around;
 }
 
 .icon-ativo{
@@ -45,3 +44,7 @@ footer{
     margin-bottom: 15px;
 }
 
+.img-meio{
+    margin-right: 92px;
+    margin-left: 92px;
+}

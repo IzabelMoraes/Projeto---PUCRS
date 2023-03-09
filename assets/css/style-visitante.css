@@ -1,0 +1,152 @@
+body{
+    background: #023D68;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.user-img{
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.user-img-fundo{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 261px;
+    margin-top: 24px;
+}
+
+#pucrs-logo{
+    width: 157px;
+    height: 43px;
+}
+
+#header-p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+.mapa h1{
+    margin-top: 22px;
+    margin-right: 80px;
+    font-size: 25px;
+    line-height: 24.2px;
+    color: white;
+}
+
+.mapa img{
+    margin-top: 20px;
+    width: 310px;
+    height: 463px;
+}
+
+.referencia-p{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 30px 0 6px;
+}
+
+.referencia-ilustracao{
+    width: 280px;
+    height: 55px;
+    background: rgba(206, 204, 204, 0.12);
+    border: 1px solid #59B9D9;
+    border-radius: 10px;
+    margin-top: 17px;
+}
+
+#texto-escolha{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 49px;
+}
+
+#frase-escolha{
+    font-size: 14px;
+    margin: 4px 14px 32px 19px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.curso-imagem-texto{
+    font-size: 8px;
+    line-height: 10px;
+    color: white;
+    background: #0065A3;
+    border-radius: 2px;
+    width: 54px;
+    height: 10px;
+    position: relative;
+    top: 10px;
+    right: 111px;
+}
+
+.curso-imagem{
+    width: 277px;
+    height: 120px;
+    border-radius: 0 15px 0 15px;
+}
+
+.curso-titulo{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    width: 152px;
+    position: relative;
+    bottom: 103px;
+    right: 53px;
+}
+
+.curso-especificacao{
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    width: 140px;
+    position: relative;
+    bottom: 95px;
+    right: 60px;
+}
+
+.curso-especificacao-1{
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    width: 107px;
+    height: 18px;
+    position: relative;
+    bottom: 95px;
+    right: 75px;
+}
+
+.botao button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #013357;
+    background: rgba(238, 204, 131, 0.61);
+    border-radius: 0 0 5px 5px;
+    border: none;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    bottom: 54px;
+    left: 89px;
+}
+
+.botao img{
+    margin-left: 12px;
+}

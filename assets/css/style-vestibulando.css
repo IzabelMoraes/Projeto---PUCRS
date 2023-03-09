@@ -1,0 +1,124 @@
+body{
+    background: #023D68;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.user-img{   
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 35px;
+    height: 35px; 
+}
+
+.user-img-fundo{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 100%;
+    margin-top: 24px;
+}
+
+#ola{    
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    margin-top: 43px;
+    margin-right: 68px;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-titulo{
+    font-size: 20px;
+    line-height: 24.38px;
+    color: white;
+    margin-top: 30px;
+}
+
+.margin1{
+    margin-right: 75px;
+}
+
+.margin2{
+    margin-right: 175px;
+}
+
+.margin3{
+    margin-right: 135px;
+}
+
+.margin4{
+    margin-right: 95px;
+}
+
+.card-texto{
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFFB2;
+    margin-bottom: 10px;
+}
+
+.marg1{
+    margin-right: 25px;
+}
+
+.marg2{
+    margin-right: 115px;
+}
+
+.marg3{
+    margin-right: 115px;
+}
+
+.marg4{
+    margin-right: 65px;
+}
+
+.card-img-secao{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-texto{
+    width: 210.52px;
+    height: 25px;
+    font-size: 13px;
+    line-height: 17.07px;
+    color: white;
+    position: relative;
+    bottom: 121px;
+    left: 9px;
+}
+
+
+.card-img{    
+    width: 308px;
+    height: 130px;
+}
+
+.espacamento{
+    margin-bottom: 5rem;
+}
+
+.card-botao a{
+    text-decoration: none;
+    color: white;
+}
+
+.card-botao button{
+    color: white;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    background: #0065A3;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    bottom: 56px;
+    left: 27px;
+}
+
