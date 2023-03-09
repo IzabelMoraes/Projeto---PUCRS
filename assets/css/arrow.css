@@ -1,6 +1,7 @@
 #arrow img{
-    position: absolute;
+    position: relative;
     top: 37px;
+    margin-right: 284px;
     left: 20px;
     width: 30px;
     height: 30px;

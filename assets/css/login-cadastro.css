@@ -1,14 +1,14 @@
 body{
-    background:  #023D68 ;
+    background: #023D68;
     font-family: 'Montserrat', sans-serif;
 }
 
-#conta-vestibulando{
+
+#conta{
     color: white;
     font-size: 13px;
     line-height: 18px;
     margin-top: 7px;
-    margin-bottom: 19px;
 }
 
 .form input{
@@ -19,7 +19,7 @@ body{
     border-radius: 10px;
     outline: none;
     padding: 0 10px;
-    margin-bottom: 22px;
+    font-size: 20px;
 }
 
 .form-1{
@@ -29,9 +29,10 @@ body{
     font-size: 15px;
     padding: 0 10px;
     background-color: #023D68;
+    margin-top: 6px;
     position: relative;
-    top: 7px;
-    right: 69px;
+    top: 6px;
+    right: 71px;
 }
 
 .form-2{
@@ -41,44 +42,17 @@ body{
     font-size: 15px;
     padding: 0 10px;
     background-color: #023D68;
+    margin-top: 42px;
     position: relative;
-    top: 7px;
-    right: 79px;
+    top: 6px;
+    right: 71px;
 }
 
-.form-3{
-    color: white;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 0 10px;
-    background-color: #023D68;
-    position: relative;
-    top: 7px;
-    right: 82px;
-}
-
-.form-4{
-    color: white;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 15px;
-    padding: 0 10px;
-    background-color: #023D68;
-    position: relative;
-    top: 7px;
-    right: 29px;
-}
 
 input[type="text"]{   
     color: white;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-}
-
-input[type="email"]{
-    color: white;
-    font-size: 14px;
 }
 
 
@@ -87,7 +61,24 @@ input[type="password"]{
     font-size: 14px;
 }
 
-#botao-vestibulando{
+
+input[type="email"]{
+    color: white;
+    font-size: 14px;
+}
+
+#senha-esqueci{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    position:relative;
+    right: 74px;
+}
+
+#botao-login{
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 15px;
@@ -98,6 +89,23 @@ input[type="password"]{
     border-radius: 10px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 25px;
+    margin-top: 30px;
+    position: relative;
+    left: 140px;
 }
 
+#botao-cadastro{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 18.15px;
+    width: 94px;
+    height: 27px;
+    background-color: #0473B2;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+    position: relative;
+    left: 70px;
+}

@@ -1,10 +1,6 @@
 body{
-    position: relative;
-    width: 232px;
-    height: 570px;
     background: #023D68;
     font-family: 'Montserrat', sans-serif;
-    background-repeat: no-repeat;
 }
 
 .graduacao-header{
@@ -13,34 +9,12 @@ body{
 }
 
 #graduacao-h1{
-    position: absolute;
-    top: 35px;
-    left: 10px;
     width: 251px;
     height: 24px;
     font-size: 20px;
     color: white;
     font-weight: 400;
-}
-
-.vestibulando-img{
-    position: sticky;
-    margin-top: 8px;
-    margin-left: 8px;
-    width: 30px;
-    height: 30px;
-}
-
-
-.vestibulando-img-fundo{
-    position: absolute;
-    left: 264px;
-    top: 23px;
-    width: 45px;
-    height: 45px;
-    background-color: white;
-    border-radius: 100%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-top: 36px;
 }
 
 .curso-imagem-texto{
@@ -49,51 +23,67 @@ body{
     color: white;
     background: #0065A3;
     border-radius: 2px;
-    position: relative;
-    top: 30px;
-    left: 10px;
-    z-index: 1;
     width: 54px;
     height: 10px;
+    position: relative;
+    top: 55px;
+    right: 112px;
 }
 
 .curso-imagem{
-    position: relative;
     width: 277px;
     height: 120px;
     border-radius: 0 15px 15px 15px;
-    top: 20px;
-    left: 10px;
 }
 
-@media (min-width: 355px) and (max-width: 375px){
-    .vestibulando-img-fundo{
-        left: 320px;
-        top: 18px;
-    }
-    .curso-imagem-texto{
-        left: 40px;
-    }
-    .curso-imagem{
-        left: 40px;
-    }
+.curso-fundo{
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    width: 310px;
 }
 
-@media (min-width: 380px) and (max-width: 425px){
-    #graduacao-h1{
-        width: 270px;
-        font-size: 22px;
-    }
-    .vestibulando-img-fundo{
-        left: 371px;
-        top: 18px;
-    }
-    .curso-imagem-texto{
-        left: 58px;
-    }
-    .curso-imagem{
-        width: 290px;
-        height: 125px;
-        left: 57px;
-    }
+.text-1{
+    color: white;
+    font-size: 15px;
+    width: 161px;
+    height: 10px;
+    position: relative;
+    top: 63px;
+    right: 50px;
 }
+
+.text-2{
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    width: 175px;
+    height: 35px;
+    position: relative;
+    right: 45px;
+    top: 95px;
+}
+
+.curso-info{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #013C67;
+    display: flex;
+    margin-top: 8px;
+}
+
+.curso-info-ultimo{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #013C67;
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 8px;
+}
+
+.curso-info-separa{
+    margin-right: 75px;
+    margin-left: 75px;
+}
+

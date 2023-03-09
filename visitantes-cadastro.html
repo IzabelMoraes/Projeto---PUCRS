@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/arrow.css">
     <link rel="stylesheet" href="./assets/css/brasao.css">
     <link rel="stylesheet" href="./assets/css/input-webkit.css">
-    <link rel="stylesheet" href="./assets/css/visitantes-login.css">
+    <link rel="stylesheet" href="./assets/css/login-cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/ico/Brasão_PUCRS.ico" type="image/x-icon">
     <title>PUCRS - Visitante</title>
 </head>
+
 <body>
     <header>
-        <a href="./index.html" id="arrow"><img src="./assets/img/arrow/arrow.png" alt="Voltar para página inicial" ></a>
-
-        <img src="./assets/img/logo/Brasão_PUCRS.png" alt="" id="brasao">
-        <img src="./assets/img/logo/Nome_PUCRS.png" alt="PUCRS" id="pucrs-logo">
+        <div class="container">
+            <a href="./index.html" id="arrow"><img src="./assets/img/arrow/arrow.png"
+                    alt="Voltar para página inicial"></a>
+            <div class="full-width">
+                <img src="./assets/img/logo/Brasão_PUCRS.png" alt="" id="brasao">
+            </div>
+            <img src="./assets/img/logo/Nome_PUCRS.png" alt="PUCRS" id="pucrs-logo">
+        </div>
     </header>
     <main>
-        <h1 id="conta-visitante">Essa conta é de visitante!</h1>
+        <div class="container">
+            <div class="full-width">
+                <h1 id="conta">Essa conta é de visitante!</h1>
+            </div>
 
-        <form>
-            <section class="form-name">
-                <input type="text" name="nome" id="nome" required>
-                <label for="nome">Nome</label>
-            </section>
+            <form>
+                <section class="form">
+                    <div class="full-width">
+                        <label for="nome" class="form-1">Nome</label>
+                    </div>
+                    <input type="text" name="nome" id="nome" required>
+    
+                    <div class="full-width">
+                        <label for="email" class="form-2">E-mail</label>
+                    </div>
+                    <input type="email" name="email" id="email" required>
+                </section>
 
-            <section class="form-email">
-                <input type="email" name="email" id="email" required>
-                <label for="email">E-mail</label>
-            </section>
+                <div class="full-width">
+                   <input type="submit" value="Entrar" id="botao-cadastro">
+                </div>
 
-            <input type="submit" value="Entrar" id="botao-visitante">
-        </form>
+            </form>
+        </div>
     </main>
 </body>
+
 </html>

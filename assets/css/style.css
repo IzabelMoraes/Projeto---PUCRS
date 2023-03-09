@@ -1,56 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
-    position: relative;
-    width: 232px;
-    height: 570px;
-    background: linear-gradient(180deg, #023D68 71.09%, rgba(21, 83, 127, 0.817316) 91.28%, rgba(26, 89, 134, 0.763889) 97.18%, rgba(38, 103, 149, 0.645833) 104.23%, rgba(105, 179, 232, 0) 107.66%);
+    background: #023D68;
     font-family: 'Montserrat', sans-serif;
     background-repeat: no-repeat;
 }
 
 /*Estilização diferente do brasão*/
 #brasao{
-    position: absolute;
     width: 71.95px;
     height: 100px;
-    left: 124px;
-    top: 90px;
+    display: block;
+    margin-top: 90px;
 }
 
 #pucrs-logo{
-    position: absolute;
+    margin-top: 10px;
     width: 113px;
     height: 24.67px;
-    left: 103px;
-    top: 200px;
 }
 /*Fim da estilização diferente do brasão*/
 #campos-texto{
-    position: absolute;
-    width: 302px;
-    height: 30px;
-    left: 15px;
-    top: 248px;
     color: white;
     font-size: 18px;
+    text-align: center;
     line-height: 24px;
+    margin-top: 21px;
 }
 
 
 #escolha-texto{
-    position: absolute;
-    top: 272px;
-    width: 291px;
-    left: 25px;
     font-size: 11px;
+    text-align: center;
     line-height: 14.52px;
     color: white;
+    margin-top: 1px;
 }
 
 .tipo-login{
     display: flex;
     flex-direction: row;
-    position: relative;
-    top: 334px;
 }
 
 .visitante-login{
@@ -63,8 +54,6 @@ body{
     background: rgba(0, 105, 180, 0.4);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    position: relative;
-    left: 55px;
 }
 
 .visitante-img{
@@ -104,8 +93,6 @@ body{
     background: rgba(89, 185, 217, 0.4);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    position: relative;
-    left: 103px;
 }
 
 .vestibulando-img{
@@ -133,6 +120,33 @@ body{
 #vestibulando-h2{
     color: white;
     text-decoration: none;
+}
+
+.box-login{
+    margin: 35px 25px 60px 25px;
+}
+
+.tem-conta h2{
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+}
+
+.tem-conta button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #013357;
+    background: rgba(238, 204, 131, 0.61);
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.tem-conta img{
+    margin-left: 18px;
 }
 
 @media (min-width: 355px) and (max-width: 375px){
