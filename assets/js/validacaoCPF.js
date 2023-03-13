@@ -1,11 +1,14 @@
 let value_cpf = document.querySelector('#campo_cpf');
 
+
  value_cpf.addEventListener("keydown", function(e) {
-   if (e.key > "a" && e.key < "z") {
+    document.querySelector('.cpf-validacao span').innerHTML = ''
+    if (e.key > "a" && e.key < "z") {
      e.preventDefault();
    }
  });
-value_cpf.addEventListener("blur", function(e) {
+value_cpf.addEventListener("change", function(e) {
+
      //Remove tudo o que não é dígito
      let validar_cpf = this.value.replace( /\D/g , "");
 
@@ -22,7 +25,12 @@ value_cpf.addEventListener("blur", function(e) {
         Resto = (Soma * 10) % 11;
       }
       if ((Resto == 10) || (Resto == 11))  Resto = 0;
-      if (Resto != parseInt(validar_cpf.substring(9, 10)) ) return alert("CPF Inválido!");;
+      if (Resto != parseInt(validar_cpf.substring(9, 10))){
+        document.querySelector('.cpf-validacao span').append('CPF inválido')
+
+        document.querySelector('.button_sub').classList.add('disabled');
+        // alert('teste')
+      }
 
       Soma = 0;
       for (let i = 1; i <= 10; i++){ 
@@ -31,10 +39,17 @@ value_cpf.addEventListener("blur", function(e) {
       }  
 
       if ((Resto == 10) || (Resto == 11))  Resto = 0;
-      if (Resto != parseInt(validar_cpf.substring(10, 11) ) ) return alert("CPF Inválido!");;
+      if (Resto != parseInt(validar_cpf.substring(10, 11))){
+        document.querySelector('.cpf-validacao span').append('CPF inválido')
+
+        document.querySelector('.button_sub').classList.add('disabled');
+        // alert('teste')
+      }
 
      } else {
-       alert("CPF Inválido! É esperado 11 dígitos numéricos.")
+      document.querySelector('.cpf-validacao span').append('CPF Inválido! É esperado 11 dígitos numéricos')
+      document.querySelector('.button_sub').classList.add('disabled');
+      // alert('teste')
      }   
 
  })

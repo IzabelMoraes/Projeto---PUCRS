@@ -70,6 +70,19 @@ body{
     right: 29px;
 }
 
+.span-texto{
+    display: block;
+    width: 229px;
+    color: white;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 input[type="text"]{   
     color: white;
     font-size: 14px;

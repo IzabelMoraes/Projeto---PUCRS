@@ -34,7 +34,7 @@
             <div class="full-width">
                 <h1 id="conta-vestibulando">Essa conta é de vestibulando!</h1>
             </div>
-            <form>
+            <form onsubmit="validacao()">
                 <section class="form">
                     <div class="full-width">
                         <label for="nome" class="form-1">Nome</label>
@@ -49,8 +49,10 @@
                     <div class="full-width">
                         <label for="cpf" class="form-2">CPF</label>
                     </div>
-                    <input type="text" name="cpf" id="campo_cpf" data-js="cpf" required>
-                    
+                    <div class="cpf-validacao">
+                        <input type="text" name="cpf" id="campo_cpf" data-js="cpf" required><br>
+                        <span class="span-texto"></span>
+                    </div>
                     
                     <div class="full-width">
                         <label for="rg" class="form-3">RG</label>
@@ -69,7 +71,7 @@
                 </section>
 
                 <div class="full-width">
-                    <input type="submit" value="Entrar" id="botao-vestibulando">
+                    <input type="submit" value="Entrar" id="botao-vestibulando" class="button_sub">
                 </div>
             </form>
         </div>
