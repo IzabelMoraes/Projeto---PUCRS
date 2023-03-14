@@ -1,0 +1,56 @@
+.mais-informacoes{
+    width: 285px;
+    position: relative;
+    bottom: 27px;
+}
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    background: #A9915D;
+    border-radius: 5px 5px 15px 5px;
+    border:none;
+    width: 85px;
+    height: 27px;
+    position: relative;
+    left: 96px;
+}
+
+
+.mais-info{
+    border-radius: 5px 0px 5px 5px;
+    background-color: white;
+    border: 2px solid #A9915D;
+    display: none;
+}
+
+.mais-texto{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.mais-especificacao{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.mais-ano{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #A9915D;
+    text-align: end;
+}
+
+.menu-nav.activa .mais-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+}
