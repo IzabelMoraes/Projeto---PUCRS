@@ -95,10 +95,6 @@ input[type="email"]{
 }
 
 #botao-cadastro{
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 15px;
-    line-height: 18.15px;
     width: 94px;
     height: 27px;
     background-color: #0473B2;
@@ -109,3 +105,11 @@ input[type="email"]{
     position: relative;
     left: 70px;
 }
+
+#botao-cadastro a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 18.15px;
+    text-decoration: none;
+}    
